@@ -1,14 +1,19 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/login/login",
+        "pages/books/books"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-field": "@vant/weapp/field/index",
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-button": "@vant/weapp/button/index",
+        "van-toast": "@vant/weapp/toast/index"
+    }
 }

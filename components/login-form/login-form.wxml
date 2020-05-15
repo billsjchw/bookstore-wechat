@@ -1,0 +1,18 @@
+<!--components/login-form/login-form.wxml-->
+<view class="login-form-brand">
+    <image src="/images/books.png" class="login-form-icon"/>
+    <view class="login-form-title">Bookstore</view>
+</view>
+<view class="login-form-fields-wrapper">
+    <van-cell-group class="login-form-fields">
+        <van-field type="text" value="{{ username }}" bind:change="onUsernameChange" size="large" placeholder="Username"/>
+        <van-field type="password" value="{{ password }}" bind:change="onPasswordChange" size="large" placeholder="Password"/>
+    </van-cell-group>
+</view>
+<view class="login-form-submit-wrapper">
+    <van-button bind:click="onSubmit" type="info" block class="login-form-submit">
+        <text class="login-form-submit-text">Sign in</text>
+    </van-button>
+</view>
+<view class="login-form-footer"/>
+<van-toast id="van-toast"/>
