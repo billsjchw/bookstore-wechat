@@ -1,0 +1,12 @@
+<!--components/book-grid/book-grid.wxml-->
+<wxs module="Util" src="../../utils/Util.wxs"/>
+<van-grid column-num="2" gutter="20rpx">
+    <van-grid-item wx:for="{{ books }}" wx:key="isbn" wx:for-item="book" data-book="{{ book }}" bind:tap="handleTapBook">
+        <view slot="icon"><image src="{{ book.cover.data }}" class="book-grid-book-cover"/></view>
+        <view slot="text">
+            <text class="book-grid-book-info">{{ book.title }}</text>
+            <text class="book-grid-book-info">{{ book.author }}</text>
+            <text class="book-grid-book-info">￥{{ Util.toFixed(book.price / 100, 2) }}</text>
+        </view>
+    </van-grid-item>
+</van-grid>

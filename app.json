@@ -1,7 +1,8 @@
 {
     "pages": [
+        "pages/index/index",
         "pages/login/login",
-        "pages/books/books"
+        "pages/book/book"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -14,6 +15,12 @@
         "van-field": "@vant/weapp/field/index",
         "van-cell-group": "@vant/weapp/cell-group/index",
         "van-button": "@vant/weapp/button/index",
-        "van-toast": "@vant/weapp/toast/index"
+        "van-toast": "@vant/weapp/toast/index",
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+        "van-search": "@vant/weapp/search/index",
+        "van-grid": "@vant/weapp/grid/index",
+        "van-grid-item": "@vant/weapp/grid-item/index",
+        "van-overlay": "@vant/weapp/overlay/index"
     }
 }

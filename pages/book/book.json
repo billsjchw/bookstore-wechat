@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "book-view": "../../components/book-view/book-view"
+    }
+}

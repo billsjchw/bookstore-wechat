@@ -1,0 +1,4 @@
+<!--components/more-tab/more-tab.wxml-->
+<view class="user-tab-logout-button-wrapper">
+    <logout-button/>
+</view>

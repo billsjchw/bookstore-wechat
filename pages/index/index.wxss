@@ -1,0 +1,5 @@
+/* pages/index/index.wxss */
+.index-tabbar {
+    min-height: 50px;
+    max-height: 50px;
+}
