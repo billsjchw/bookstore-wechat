@@ -1,0 +1,2 @@
+<!--components/logout-button/logout-button.wxml-->
+<van-button bind:click="handleLogout" plain block type="danger" class="logout-button">logout</van-button>

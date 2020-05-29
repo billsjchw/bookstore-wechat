@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "books-tab": "../../components/books-tab/books-tab",
+        "cart-tab": "../../components/cart-tab/cart-tab",
+        "orders-tab": "../../components/orders-tab/orders-tab",
+        "user-tab": "../../components/user-tab/user-tab"
+    }
 }

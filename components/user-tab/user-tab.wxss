@@ -1,0 +1,5 @@
+/* components/more-tab/more-tab.wxss */
+.user-tab-logout-button-wrapper {
+    display: flex;
+    justify-content: center;
+}

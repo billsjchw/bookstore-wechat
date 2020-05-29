@@ -1,13 +1,11 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!--pages/index/index.wxml-->
+<view hidden="{{ active !== 0 }}"><books-tab/></view>
+<view hidden="{{ active !== 1 }}"><cart-tab/></view>
+<view hidden="{{ active !== 2 }}"><orders-tab/></view>
+<view hidden="{{ active !== 3 }}"><user-tab/></view>
+<van-tabbar active="{{ active }}" bind:change="onTabChange" class="index-tabbar">
+    <van-tabbar-item icon="home-o">Home</van-tabbar-item>
+    <van-tabbar-item icon="cart-o">Cart</van-tabbar-item>
+    <van-tabbar-item icon="orders-o">Orders</van-tabbar-item>
+    <van-tabbar-item icon="user-o">User</van-tabbar-item>
+</van-tabbar>
