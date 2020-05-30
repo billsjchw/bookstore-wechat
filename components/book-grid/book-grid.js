@@ -5,10 +5,10 @@ Component({
     },
     methods: {
         handleTapBook(event) {
-            let isbn = event.currentTarget.dataset.book.isbn;
+            let bookId = event.currentTarget.dataset.book.id;
             wx.navigateTo({
-                url: `../../pages/book/book?isbn=${isbn}`
+                url: `../../pages/book/book?bookId=${bookId}`
             });
         }
     }
-})
+});

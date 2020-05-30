@@ -4,9 +4,9 @@
     <van-grid-item wx:for="{{ books }}" wx:key="isbn" wx:for-item="book" data-book="{{ book }}" bind:tap="handleTapBook">
         <view slot="icon"><image src="{{ book.cover.data }}" class="book-grid-book-cover"/></view>
         <view slot="text">
-            <text class="book-grid-book-info">{{ book.title }}</text>
-            <text class="book-grid-book-info">{{ book.author }}</text>
-            <text class="book-grid-book-info">￥{{ Util.toFixed(book.price / 100, 2) }}</text>
+            <view class="book-grid-book-title">{{ book.title }}</view>
+            <view class="book-grid-book-author">{{ book.author }}</view>
+            <view class="book-grid-book-price">￥{{ Util.toFixed(book.price / 100, 2) }}</view>
         </view>
     </van-grid-item>
 </van-grid>

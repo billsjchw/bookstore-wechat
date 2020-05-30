@@ -6,11 +6,30 @@
     max-width: 300rpx;
 }
 
-.book-grid-book-info {
-    display: block;
+.book-grid-book-title {
     min-width: 300rpx;
     max-width: 300rpx;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 27rpx;
+    font-weight: bold;
+}
+
+.book-grid-book-author {
+    min-width: 300rpx;
+    max-width: 300rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.book-grid-book-price {
+    min-width: 300rpx;
+    max-width: 300rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 27rpx;
+    font-weight: bold;
 }

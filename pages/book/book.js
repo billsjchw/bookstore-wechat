@@ -9,12 +9,12 @@ Page({
         book: null
     },
     onLoad(options) {
-        let isbn = options.isbn;
-        this.fetchBook(isbn);
+        let bookId = options.bookId;
+        this.fetchBook(bookId);
     },
-    fetchBook(isbn) {
+    fetchBook(id) {
         // Toast.loading({ duration: 0, forbidClick: true, message: "Loading ..." });
-        BookService.findBookByIsbn(isbn, (msg) => {
+        BookService.findBookById(id, (msg) => {
             // Toast.clear();
             if (msg.status === "SUCCESS")
                 this.setData({ loading: false, book: msg.data });

@@ -36,7 +36,7 @@
             </view>
             <view class="book-view-table-row">
                 <view class="book-view-table-cell">Price</view>
-                <view class="book-view-table-cell">{{ book.price }}</view>
+                <view class="book-view-table-cell">￥{{ Util.toFixed(book.price / 100, 2) }}</view>
             </view>
             <view class="book-view-table-row">
                 <view class="book-view-table-cell">Stock</view>
