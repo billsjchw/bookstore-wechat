@@ -1,4 +1,0 @@
-<!--pages/book/book.wxml-->
-<book-view wx:if="{{ !loading && !error }}" book="{{ book }}"/>
-<text wx:if="{{ !loading && error }}">Error</text>
-<van-toast id="van-toast"/>

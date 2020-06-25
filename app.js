@@ -1,6 +1,7 @@
 // app.js
 App({
-    globalData: {
-        basic: null
-    }
+  globalData: {
+    basic: null,
+    user: null,
+  },
 });

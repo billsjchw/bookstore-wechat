@@ -1,49 +1,38 @@
 /* components/login-form/login-form.wxss */
-.login-form-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.login-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.login-form-icon {
-    display: block;
-    min-width: 200rpx;
-    max-width: 200rpx;
-    min-height: 200rpx;
-    max-height: 200rpx;
+.login-form__title {
+  font-size: 55rpx;
 }
 
-.login-form-title {
-    font-size: 55rpx;
+.login-form__logo {
+  min-width: 200rpx;
+  max-width: 200rpx;
+  min-height: 200rpx;
+  max-height: 200rpx;
 }
 
-.login-form-fields-wrapper {
-    margin-top: 20rpx;
-    display: flex;
-    justify-content: center;
+.login-form__fields {
+  min-width: 600rpx;
+  max-width: 600rpx;
+  margin-top: 20rpx;
 }
 
-.login-form-fields {
-    min-width: 600rpx;
-    max-width: 600rpx;
+.login-form__submit-button {
+  min-width: 400rpx;
+  max-width: 400rpx;
+  margin-top: 30rpx;
 }
 
-.login-form-submit-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 30rpx;
+.login-form__submit-button-text {
+  font-size: 32rpx;
 }
 
-.login-form-submit {
-    min-width: 400rpx;
-    max-width: 400rpx;
-}
-
-.login-form-submit-text {
-    font-size: 32rpx;
-}
-
-.login-form-footer {
-    min-height: 180rpx;
-    max-height: 180rpx;
+.login-form__footer {
+  min-height: 180rpx;
+  max-height: 180rpx;
 }
