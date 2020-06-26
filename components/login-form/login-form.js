@@ -40,6 +40,7 @@ Component({
         Toast.clear();
         if (msg.status === 'SUCCESS') {
           getApp().globalData.user = msg.data;
+          wx.switchTab({ url: '/pages/home/home' });
         } else if (msg.status === 'UNAUTHORIZED') {
           if (msg.data === 'USER_NOT_FOUND')
             Toast({ context: this, message: 'User not found' });

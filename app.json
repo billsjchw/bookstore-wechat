@@ -1,7 +1,31 @@
 {
   "pages": [
-    "pages/login/login"
+    "pages/login/login",
+    "pages/home/home",
+    "pages/cart/cart",
+    "pages/orders/orders",
+    "pages/account/account"
   ],
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home"
+      },
+      {
+        "pagePath": "pages/cart/cart"
+      },
+      {
+        "pagePath": "pages/orders/orders"
+      },
+      {
+        "pagePath": "pages/account/account"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -13,6 +37,8 @@
     "van-field": "@vant/weapp/field/index",
     "van-button": "@vant/weapp/button/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
-    "van-toast": "@vant/weapp/toast/index"
+    "van-toast": "@vant/weapp/toast/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index"
   }
 }
