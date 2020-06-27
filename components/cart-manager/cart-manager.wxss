@@ -1,0 +1,17 @@
+/* components/cart-manager/cart-manager.wxss */
+.cart-manager__title {
+  font-size: 55rpx;
+  margin-left: 25rpx;
+  margin-bottom: 15rpx;
+}
+
+.cart-manager__cart-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-manager__cart-detail__total-price {
+  align-self: flex-end;
+  font-size: 37rpx;
+  margin-top: 15rpx;
+}

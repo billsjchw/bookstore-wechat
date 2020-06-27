@@ -1,5 +1,7 @@
-const BackendConst = {
-  BASE_URL: 'http://localhost:8080',
+const MiscConst = {
+  BACKEND_BASE_URL: 'http://localhost:8080',
+  CART_ITEM_MIN_AMOUNT: 1,
+  CART_ITEM_MAX_AMOUNT: 200,
 };
 
 const HttpStatus = {
@@ -7,4 +9,4 @@ const HttpStatus = {
   UNAUTHORIZED: 401,
 };
 
-export {BackendConst, HttpStatus};
+export {MiscConst, HttpStatus};

@@ -1,1 +1,5 @@
 /* custom-tab-bar/index.wxss */
+.custom-tab-bar {
+  min-height: 50px;
+  max-height: 50px;
+}
