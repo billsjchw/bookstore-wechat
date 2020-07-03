@@ -15,3 +15,8 @@
   font-size: 37rpx;
   margin-top: 15rpx;
 }
+
+.cart-manager__cart-detail__go-to-checkout-button {
+  align-self: flex-end;
+  margin-top: 15rpx;
+}

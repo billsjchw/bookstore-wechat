@@ -1,0 +1,36 @@
+/* components/book-grid/book-grid.wxss */
+/* components/book-grid/book-grid.wxss */
+.book-grid__grid-item__book-cover {
+  min-height: 400rpx;
+  max-height: 400rpx;
+  min-width: 300rpx;
+  max-width: 300rpx;
+}
+
+.book-grid__grid-item__book-title {
+  min-width: 300rpx;
+  max-width: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 27rpx;
+  font-weight: bold;
+}
+
+.book-grid__grid-item__book-author {
+  min-width: 300rpx;
+  max-width: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.book-grid__grid-item__book-price {
+  min-width: 300rpx;
+  max-width: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 27rpx;
+  font-weight: bold;
+}

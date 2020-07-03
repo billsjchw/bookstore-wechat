@@ -1,0 +1,5 @@
+<!--pages/book/book.wxml-->
+<view class="book__book-view-wrapper">
+  <book-view class="book__book-view"/>
+  <add-to-cart-button class="book__add-to-cart-button"/>
+</view>

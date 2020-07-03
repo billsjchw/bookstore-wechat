@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "checkout-form": "../../components/checkout-form/checkout-form"
+  }
+}

@@ -9,8 +9,8 @@ Component({
     loading: true,
     submitting: false,
   },
-  lifetimes: {
-    attached() {
+  pageLifetimes: {
+    show() {
       this.fetchCart();
     },
   },
@@ -75,6 +75,9 @@ Component({
         }
         this.setData({ submitting: false });
       });
+    },
+    handleGoToCheckout() {
+      wx.navigateTo({ url: '../../pages/checkout/checkout' });
     },
   },
 })

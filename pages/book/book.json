@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "book-view": "../../components/book-view/book-view",
+    "add-to-cart-button": "../../components/add-to-cart-button/add-to-cart-button"
+  }
+}

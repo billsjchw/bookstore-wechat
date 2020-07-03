@@ -1,0 +1,15 @@
+<!--components/book-browser/book-browser.wxml-->
+<van-search
+  value="{{ input }}"
+  bind:change="handleInputChange"
+  bind:search="handleSearch"
+  class="book-browser__search-bar"
+/>
+<scroll-view
+  scroll-y="{{ true }}"
+  bind:scrolltolower="handleLoadMore"
+  class="book-browser__scroll-view"
+>
+  <book-grid books="{{ books }}" row-size="{{ rowSize }}"/>
+</scroll-view>
+<van-toast id="van-toast"/>

@@ -1,2 +1,2 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<book-browser page-size="{{ 6 }}" row-size="{{ 2 }}"/>

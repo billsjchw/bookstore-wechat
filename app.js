@@ -1,7 +1,7 @@
 // app.js
 App({
   globalData: {
-    basic: 'YWRtaW46MTIzNA==',
+    basic: null,
     user: null,
   },
 });

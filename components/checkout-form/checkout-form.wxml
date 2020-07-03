@@ -1,0 +1,57 @@
+<!--components/checkout-form/checkout-form.wxml-->
+<view class="checkout-form__title">Checkout</view>
+<view class="checkout-form__consignee">
+  <view class="checkout-form__sub-title">Consignee</view>
+  <van-cell-group>
+    <van-field
+      type="text"
+      value="{{ value.address }}"
+      error-message="{{ errMsg.address }}"
+      label="Address"
+      bind:change="handleAddressChange"
+    />
+    <van-field
+      type="text"
+      value="{{ value.phone }}"
+      error-message="{{ errMsg.phone }}"
+      label="Phone"
+      bind:change="handlePhoneChange"
+    />
+    <van-field
+      type="text"
+      value="{{ value.firstName }}"
+      error-message="{{ errMsg.firstName }}"
+      label="First Name"
+      bind:change="handleFirstNameChange"
+    />
+    <van-field
+      type="text"
+      value="{{ value.lastName }}"
+      error-message="{{ errMsg.lastName }}"
+      label="Last Name"
+      bind:change="handleLastNameChange"
+    />
+  </van-cell-group>
+</view>
+<view class="checkout-form__payment-method">
+  <view class="checkout-form__sub-title">Payment Method</view>
+  <van-radio-group value="{{ value.paymentMethod }}" bind:change="handlePaymentMethodChange">
+    <van-cell-group>
+      <van-cell title="Online payment">
+        <van-radio slot="right-icon" name="ONLINE" />
+      </van-cell>
+      <van-cell title="Cash on delivery">
+        <van-radio slot="right-icon" name="COD" />
+      </van-cell>
+    </van-cell-group>
+  </van-radio-group>
+</view>
+<van-button
+  bind:tap="handleSubmit"
+  block
+  type="info"
+  class="checkout-form__submit-button"
+>
+  <text class="checkout-form__submit-button-text">Continue to checkout</text>
+</van-button>
+<van-toast id="van-toast"/>

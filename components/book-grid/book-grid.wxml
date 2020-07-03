@@ -1,0 +1,12 @@
+<!--components/book-grid/book-grid.wxml-->
+<wxs module="util" src="../../utils/util.wxs"/>
+<van-grid column-num="{{ rowSize }}" gutter="20rpx">
+    <van-grid-item wx:for="{{ books }}" wx:key="id" wx:for-item="book" data-book="{{ book }}" bind:tap="handleTapBook">
+        <view slot="icon"><image src="{{ book.cover.data }}" class="book-grid__grid-item__book-cover"/></view>
+        <view slot="text">
+            <view class="book-grid__grid-item__book-title">{{ book.title }}</view>
+            <view class="book-grid__grid-item__book-author">{{ book.author }}</view>
+            <view class="book-grid__grid-item__book-price">¥{{ util.priceToString(book.price) }}</view>
+        </view>
+    </van-grid-item>
+</van-grid>

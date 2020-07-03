@@ -15,5 +15,12 @@
   <view class="cart-manager__cart-detail__total-price">
     Total Price: ¥{{ util.priceToString(util.cartTotalPrice(cart)) }}
   </view>
+  <van-button
+    bind:tap="handleGoToCheckout"
+    type="info"
+    class="cart-manager__cart-detail__go-to-checkout-button"
+  >
+    GO TO CHECKOUT
+  </van-button>
 </view>
 <van-toast id="van-toast"/>
