@@ -1,14 +1,13 @@
 // components/book-grid/book-grid.js
 Component({
-    properties: {
-        books: Object
+  properties: {
+    books: Array,
+    rowSize: Number,
+  },
+  methods: {
+    handleTapBook(event) {
+      let bookId = event.currentTarget.dataset.book.id;
+      wx.navigateTo({ url: `../../pages/book/book?bookId=${bookId}` });
     },
-    methods: {
-        handleTapBook(event) {
-            let isbn = event.currentTarget.dataset.book.isbn;
-            wx.navigateTo({
-                url: `../../pages/book/book?isbn=${isbn}`
-            });
-        }
-    }
+  },
 })

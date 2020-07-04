@@ -1,0 +1,43 @@
+<!--components/cart-item-card/cart-item-card.wxml-->
+<wxs module="util" src="../../utils/util.wxs"/>
+<view class="cart-item-card__wrapper">
+  <view class="cart-item-card__checkbox-wrapper">
+    <van-checkbox
+      value="{{ value.active }}"
+      bind:change="handleActiveChange"
+    />
+  </view>
+  <van-card
+    price="{{ util.priceToString(value.book.price) }}"
+    desc="{{ value.book.author }}"
+    title="{{ value.book.title }}"
+    thumb="{{ value.book.cover.data }}"
+    num="{{ value.amount }}"
+    class="cart-item-card__card"
+  >
+    <view slot="footer">
+      <van-button
+        bind:tap="handleAdd"
+        size="mini"
+        round
+      >
+        +1
+      </van-button>
+      <van-button
+        bind:tap="handleSubstract"
+        size="mini"
+        round
+        class="cart-item-card__substract-button"
+      >
+        -1
+      </van-button>
+      <van-button
+        bind:tap="handleDelete"
+        size="mini"
+        icon="delete"
+        round
+        class="cart-item-card__delete-button"
+      />
+    </view>
+  </van-card>
+</view>

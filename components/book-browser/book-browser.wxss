@@ -1,0 +1,5 @@
+/* components/book-browser/book-browser.wxss */
+.book-browser__scroll-view {
+  min-height: 980rpx;
+  max-height: 980rpx;
+}

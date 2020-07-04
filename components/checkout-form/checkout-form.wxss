@@ -1,0 +1,25 @@
+/* components/checkout-form/checkout-form.wxss */
+.checkout-form__title {
+  font-size: 55rpx;
+}
+
+.checkout-form__sub-title {
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.checkout-form__consignee {
+  margin-top: 20rpx;
+}
+
+.checkout-form__payment-method {
+  margin-top: 25rpx;
+}
+
+.checkout-form__submit-button {
+  margin-top: 20rpx;
+}
+
+.checkout-form__submit-button-text {
+  font-size: 28rpx;
+}

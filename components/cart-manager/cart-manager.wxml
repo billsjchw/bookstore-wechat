@@ -1,0 +1,26 @@
+<!--components/cart-manager/cart-manager.wxml-->
+<wxs module="util" src="../../utils/util.wxs"/>
+<view class="cart-manager__title">Your Cart</view>
+<view wx:if="{{ error }}">
+  Failed to load your cart
+</view>
+<view wx:elif="{{ !loading }}" class="cart-manager__cart-detail">
+  <cart-item-card
+    wx:for="{{ cart.items }}"
+    wx:key="index"
+    value="{{ item }}"
+    bind:change="handleChangeCartItem"
+    bind:delete="handleDeleteCartItem"
+  />
+  <view class="cart-manager__cart-detail__total-price">
+    Total Price: ¥{{ util.priceToString(util.cartTotalPrice(cart)) }}
+  </view>
+  <van-button
+    bind:tap="handleGoToCheckout"
+    type="info"
+    class="cart-manager__cart-detail__go-to-checkout-button"
+  >
+    GO TO CHECKOUT
+  </van-button>
+</view>
+<van-toast id="van-toast"/>

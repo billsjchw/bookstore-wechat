@@ -1,18 +1,33 @@
 <!--components/login-form/login-form.wxml-->
-<view class="login-form-brand">
-    <image src="/images/books.png" class="login-form-icon"/>
-    <view class="login-form-title">Bookstore</view>
+<view class="login-form__wrapper">
+  <view><image src="../../assets/images/logo.png" class="login-form__logo"/></view>
+  <view class="login-form__title">Bookstore</view>
+  <van-cell-group class="login-form__fields">
+    <van-field
+      type="text"
+      value="{{ value.username }}"
+      error-message="{{ errMsg.username }}"
+      bind:change="handleUsernameChange"
+      size="large"
+      placeholder="Username"
+    />
+    <van-field
+      type="password"
+      value="{{ value.password }}"
+      error-message="{{ errMsg.password }}"
+      bind:change="handlePasswordChange"
+      size="large"
+      placeholder="Password"
+    />
+  </van-cell-group>
+  <van-button
+    bind:tap="handleSubmit"
+    block
+    type="info"
+    class="login-form__submit-button"
+  >
+    <text class="login-form__submit-button-text">Sign in</text>
+  </van-button>
+  <view class="login-form__footer"/>
 </view>
-<view class="login-form-fields-wrapper">
-    <van-cell-group class="login-form-fields">
-        <van-field type="text" value="{{ username }}" bind:change="onUsernameChange" size="large" placeholder="Username"/>
-        <van-field type="password" value="{{ password }}" bind:change="onPasswordChange" size="large" placeholder="Password"/>
-    </van-cell-group>
-</view>
-<view class="login-form-submit-wrapper">
-    <van-button bind:click="handleSubmit" type="info" block class="login-form-submit">
-        <text class="login-form-submit-text">Sign in</text>
-    </van-button>
-</view>
-<view class="login-form-footer"/>
 <van-toast id="van-toast"/>

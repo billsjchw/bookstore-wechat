@@ -1,0 +1,4 @@
+<!--pages/checkout/checkout.wxml-->
+<view class="checkout__checkout-form-wrapper">
+  <checkout-form class="checkout__checkout-form"/>
+</view>

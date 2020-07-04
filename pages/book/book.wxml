@@ -1,4 +1,5 @@
 <!--pages/book/book.wxml-->
-<book-view wx:if="{{ !loading && !error }}" book="{{ book }}"/>
-<text wx:if="{{ !loading && error }}">Error</text>
-<van-toast id="van-toast"/>
+<view class="book__book-view-wrapper">
+  <book-view class="book__book-view"/>
+  <add-to-cart-button class="book__add-to-cart-button"/>
+</view>

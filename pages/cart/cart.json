@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "cart-manager": "../../components/cart-manager/cart-manager"
+  }
+}

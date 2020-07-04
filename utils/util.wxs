@@ -1,0 +1,29 @@
+function priceToString(price) {
+  return (price / 100).toFixed(2);
+}
+
+function stockDescription(stock) {
+  if (stock === 0)
+    return "❌ Out of stock";
+  else if (stock < 200)
+    return "⚠ Low stock";
+  else
+    return "✔ Sufficient stock";
+}
+
+function cartTotalPrice(cart) {
+  return cart.items.reduce(
+    function (previousValue, currentItem) {
+      return currentItem.active ?
+          previousValue + currentItem.amount * currentItem.book.price :
+          previousValue;
+    },
+    0,
+  );
+}
+
+module.exports = {
+  priceToString: priceToString,
+  stockDescription: stockDescription,
+  cartTotalPrice: cartTotalPrice,
+};

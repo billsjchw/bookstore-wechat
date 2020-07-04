@@ -1,0 +1,3 @@
+<!--pages/cart/cart.wxml-->
+<cart-manager/>
+<view class="cart__footer"/>

@@ -1,0 +1,5 @@
+<!--components/add-to-cart-button/add-to-cart-button.wxml-->
+<van-button bind:tap="handleSubmit" type="info">
+  ADD TO CART
+</van-button>
+<van-toast id="van-toast"/>

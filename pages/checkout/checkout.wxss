@@ -1,0 +1,10 @@
+/* pages/checkout/checkout.wxss */
+.checkout__checkout-form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.checkout__checkout-form {
+  min-width: 690rpx;
+  max-width: 690rpx;
+}
