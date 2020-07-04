@@ -37,7 +37,7 @@ Component({
           Toast({ context: this, message: 'Max amount exceeded' });
         else
           Toast({ context: this, message: 'Unknown error' });
-        this.setData({ loading: false });
+        this.setData({ submitting: false });
       });
     }
   },
